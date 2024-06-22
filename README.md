@@ -44,7 +44,7 @@ Create a new connection with the following details:
 Go to Admin -> Variables in Airflow UI.
   ```bash
   Key: dag_config
-  Value: 
+  Val: 
   {
   "URL":"https://s3.amazonaws.com/external.abstractapi.com/challenges/melb_data.csv",
   "download_path":"melb_data.csv",
@@ -67,7 +67,7 @@ and add this line
 1. **Enable the DAG:**
 
 - Go to Airflow UI.
-- Click on the toggle button to enable the house_price_classification_dag.
+- Click on the toggle button to enable the melbourne_dag.
 
 2. **Trigger the DAG:**
 
