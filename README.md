@@ -13,13 +13,19 @@ To classify the houses we classify them by **Suburb**, **Rooms**, **Type** and *
    cd abstract
    ```
 
-2. **Build and Run the Docker image:**
+2. **Create Required folders**
+   
+   ```bash
+   mkdir config logs plugins
+   ```
+
+3. **Build and Run the Docker image:**
 
     ```bash
    docker-compose up
    ```
 
-3. **Access Airflow UI:**
+4. **Access Airflow UI:**
 
 Open http://localhost:8080 in your browser. Use the default Airflow credentials  to login:
   ```bash
@@ -27,7 +33,7 @@ Open http://localhost:8080 in your browser. Use the default Airflow credentials 
   password: airflow
   ```
 
-4. **Configure PostgreSQL connection:**
+5. **Configure PostgreSQL connection:**
 
 Go to Admin -> Connections in Airflow UI.
 Create a new connection with the following details:
@@ -40,7 +46,7 @@ Create a new connection with the following details:
   Port: 5432
   ```
 
-5. **Define the config variables**
+6. **Define the config variables**
 Go to Admin -> Variables in Airflow UI.
   ```bash
   Key: dag_config
@@ -52,7 +58,7 @@ Go to Admin -> Variables in Airflow UI.
   }
   ```
 
-6. **Linux Nodification**
+7. **Linux Nodification**
 If you are linux user you should do
   ```bash
   sudo nano /etc/hosts
