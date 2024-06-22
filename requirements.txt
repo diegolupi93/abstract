@@ -1,0 +1,5 @@
+SQLAlchemy==1.4.46
+apache-airflow==2.6.3
+boto3==1.26.161
+pendulum==2.1.2
+psycopg2-binary
