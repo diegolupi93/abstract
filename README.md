@@ -20,8 +20,12 @@ To classify the houses we classify them by **Suburb**, **Rooms**, **Type** and *
    ```
 
 3. **Build and Run the Docker image:**
+  
+   ```bash
+   docker-compose up airflow-init
+   ```
 
-    ```bash
+   ```bash
    docker-compose up
    ```
 
